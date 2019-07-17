@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RNSM.Entities" Version="1.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Calculation.Core\Domain.Calculation.Core.csproj" />
+    <ProjectReference Include="..\Domain.Calculation.Optimization\Domain.Calculation.Optimization.csproj" />
+    <ProjectReference Include="..\Domain.Core\Domain.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ILOG.Concert">
+      <HintPath>..\Lib\CPLEX\ILOG.Concert.dll</HintPath>
+    </Reference>
+    <Reference Include="ILOG.CPLEX">
+      <HintPath>..\Lib\CPLEX\ILOG.CPLEX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
